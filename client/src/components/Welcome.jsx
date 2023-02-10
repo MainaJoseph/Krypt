@@ -78,7 +78,7 @@ const Welcome = () => {
           <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start ">
-                <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center ">
+                <div className="w-20 h-20 rounded-full border-2 border-white flex justify-center items-center cursor-pointer ">
                 <span className="m-3 inline-block">
         <svg className="w-30 h-20 fill-current" xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 784.37 1277.39">
           <polygon className="fill-current text-gray-600" fillRule="nonzero" points="392.07,0 383.5,29.11 383.5,873.74 392.07,882.29 784.13,650.54 "/>
