@@ -77,14 +77,25 @@ const Welcome = () => {
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
           <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
-              <div className="flex justify-between items-start">
-                <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
-                  <SiEthereum fontSize={21} color="#fff" />
+              <div className="flex justify-between items-start ">
+                <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center ">
+                <span className="m-3 inline-block">
+        <svg className="w-30 h-20 fill-current" xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 784.37 1277.39">
+          <polygon className="fill-current text-gray-600" fillRule="nonzero" points="392.07,0 383.5,29.11 383.5,873.74 392.07,882.29 784.13,650.54 "/>
+          <polygon className="fill-current text-gray-400" fillRule="nonzero" points="392.07,0 -0,650.54 392.07,882.29 392.07,472.33 "/>
+          <polygon className="fill-current text-gray-700" fillRule="nonzero" points="392.07,956.52 387.24,962.41 387.24,1263.28 392.07,1277.38 784.37,724.89 "/>
+          <polygon className="fill-current text-gray-400" fillRule="nonzero" points="392.07,1277.38 392.07,956.52 -0,724.89 "/>
+          <polygon className="fill-current text-gray-900" fillRule="nonzero" points="392.07,882.29 784.13,650.54 392.07,472.33 "/>
+          <polygon className="fill-current text-gray-700" fillRule="nonzero" points="0,650.54 392.07,882.29 392.07,472.33 "/>
+        </svg>
+      </span>
                 </div>
-                <BsInfoCircle fontSize={17} color="#fff" />
+                <a href="https://ethereum.org/en/#:~:text=ethereum.org%20is%20your%20portal%20into%20the%20world%20of%20Ethereum."  target="_blank" rel="noreferrer">
+                <BsInfoCircle fontSize={17} color="#fff" className="cursor-help" />
+                </a>
               </div>
               <div>
-                <p className="text-white font-light text-sm">
+                <p className="text-white font-light text-sm ">
                   {shortenAddress(currentAccount)}
                 </p>
                 <p className="text-white font-semibold text-lg mt-1">
