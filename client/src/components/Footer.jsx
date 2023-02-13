@@ -14,6 +14,7 @@ const Footer = () => (
         <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]">Exchange</p>
         <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]">Tutorials</p>
         <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]">Wallet</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]"><a href="https://ropsten.etherscan.io/address/0x8aa395Ab97837576aF9cd6946C79024ef1acfdbE" target="_blank" rel="noreferrer">Transactions</a></p>
       </div>
     </div>
 
