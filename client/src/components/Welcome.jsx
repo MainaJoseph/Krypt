@@ -6,6 +6,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
+import MovingComponent from 'react-moving-text';
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
@@ -99,7 +100,17 @@ const Welcome = () => {
                   {shortenAddress(currentAccount)}
                 </p>
                 <p className="text-white font-semibold text-lg mt-1">
-                  Ethereum
+                <MovingComponent
+  type="zoomIn"
+  duration="2000ms"
+  delay="0s"
+  direction="normal"
+  timing="ease"
+  iteration="1"
+  fillMode="none">
+  Ethereum
+</MovingComponent>
+                  
                 </p>
               </div>
             </div>

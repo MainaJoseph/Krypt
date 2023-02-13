@@ -2,6 +2,7 @@ import React from "react";
 import { BsShieldFillCheck } from "react-icons/bs";
 import { BiSearchAlt } from "react-icons/bi";
 import { RiHeart2Fill } from "react-icons/ri";
+import MovingComponent from 'react-moving-text';
 
 const ServiceCard = ({ color, title, icon, subtitle }) => (
   <div className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
@@ -17,6 +18,8 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
   </div>
 );
 
+
+
 const Services = () => (
   <div className="flex w-full justify-center items-center gradient-bg-services">
     <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
@@ -27,8 +30,17 @@ const Services = () => (
           continue to improve
         </h1>
         <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
-          The best choice for buying and selling your crypto assets, with the
+        <MovingComponent
+  type="slideInFromLeft"
+  duration="2000ms"
+  delay="4s"
+  direction="normal"
+  timing="ease"
+  iteration="1"
+  fillMode="none">
+The best choice for buying and selling your crypto assets, with the
           various super friendly services we offer
+</MovingComponent>
         </p>
       </div>
 

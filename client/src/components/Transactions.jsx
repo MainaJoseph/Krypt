@@ -5,6 +5,7 @@ import { TransactionContext } from "../context/TransactionContext";
 import useFetch from "../hooks/useFetch";
 import dummyData from "../utils/dummyData";
 import { shortenAddress } from "../utils/shortenAddress";
+import MovingComponent from 'react-moving-text';
 
 const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword, amount, url }) => {
   const gifUrl = useFetch({ keyword });
@@ -59,7 +60,16 @@ const Transactions = () => {
           </h3>
         ) : (
           <h3 className="text-white text-3xl text-center my-2">
-            Connect your account to see the latest transactions
+            <MovingComponent
+  type="bounce"
+  duration="1500ms"
+  delay="0s"
+  direction="normal"
+  timing="ease"
+  iteration="infinite"
+  fillMode="none">
+              Connect your account to see the latest transactions
+</MovingComponent>
           </h3>
         )}
 
