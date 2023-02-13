@@ -16,15 +16,15 @@ const Navbar = () => {
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div>
-      <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial  ">
-      <NavBarItem title="Market" />
-        <NavBarItem  title="Trade"  />
-        <NavBarItem title="Exchange" />
-        <NavBarItem title="Tutorials" />
-        <NavBarItem title="Wallet" />
-        <NavBarItem title="Transactions" >
-
-        </NavBarItem>
+      <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
+      <div class="flex">
+  <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Market">Market</div>
+  <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Trade">Trade</div>
+  <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Exchange">Exchange</div>
+  <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Tutorials">Tutorials</div>
+  <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Wallet">Wallet</div>
+  <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Transactions">Transactions</div>
+</div>
 
         <li
          className="transition ease-in-out delay-150 bg-[#2952e3] py-2 px-7 mx-4 rounded-md cursor-pointer hover:-translate-y-1 hover:scale-110 hover:bg-[#1de1fd] font-semibold">
