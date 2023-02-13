@@ -9,12 +9,12 @@ const Footer = () => (
         <img src={logo} alt="logo" className="w-32 cursor-pointer" />
       </div>
       <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]">Market</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]">Trade</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]">Exchange</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]">Tutorials</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]">Wallet</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]"><a href="https://ropsten.etherscan.io/address/0x8aa395Ab97837576aF9cd6946C79024ef1acfdbE" target="_blank" rel="noreferrer">Transactions</a></p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]" title="Market">Market</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]" title="Trade">Trade</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]" title="Exchange">Exchange</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]" title="Tutorials">Tutorials</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]" title="Wallet">Wallet</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer hover:text-[#1de1fd]"><a href="https://ropsten.etherscan.io/address/0x8aa395Ab97837576aF9cd6946C79024ef1acfdbE" target="_blank" rel="noreferrer" title="Transactions">Transactions</a></p>
       </div>
     </div>
 
@@ -28,7 +28,7 @@ const Footer = () => (
     <div className="sm:w-[90%] w-full flex justify-between items-center mt-3">
       <p className="text-white text-left text-xs">@krypt.com @2023</p>
       <p className="text-white text-center text-xs">All rights reserved</p>
-      <p className="text-white rext-right text-xs cursor-pointer hover:text-[#1de1fd]">
+      <p className="text-white rext-right text-xs cursor-pointer hover:text-[#1de1fd]" title="portfolio">
         <a href="https://mainajm.netlify.app/" target="_blank" rel="noreferrer">
         Joseph Maina</a>
         </p>
