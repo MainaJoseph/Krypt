@@ -5,18 +5,19 @@ import { TransactionContext } from "../context/TransactionContext";
 import useFetch from "../hooks/useFetch";
 import dummyData from "../utils/dummyData";
 import { shortenAddress } from "../utils/shortenAddress";
+import MovingComponent from 'react-moving-text';
 
 const TransactionsCard = ({ addressTo, addressFrom, timestamp, message, keyword, amount, url }) => {
   const gifUrl = useFetch({ keyword });
 
   return (
-    <div className="bg-[#181918] m-4 flex flex-1
+    <div className="bg-[#00020f] m-4 flex flex-1
       2xl:min-w-[450px]
       2xl:max-w-[500px]
       sm:min-w-[270px]
       sm:max-w-[300px]
       min-w-full
-      flex-col p-3 rounded-md hover:shadow-2xl"
+      flex-col p-3 rounded-lg hover:shadow-2xl"
     >
       <div className="flex flex-col items-center w-full mt-3">
         <div className="display-flex justify-start w-full mb-6 p-2">
@@ -59,7 +60,16 @@ const Transactions = () => {
           </h3>
         ) : (
           <h3 className="text-white text-3xl text-center my-2">
-            Connect your account to see the latest transactions
+            <MovingComponent
+  type="bounce"
+  duration="1500ms"
+  delay="0s"
+  direction="normal"
+  timing="ease"
+  iteration="infinite"
+  fillMode="none">
+              Connect your account to see the latest transactions
+</MovingComponent>
           </h3>
         )}
 
