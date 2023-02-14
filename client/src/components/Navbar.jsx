@@ -23,7 +23,7 @@ const Navbar = () => {
   <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Exchange">Exchange</div>
   <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Tutorials">Tutorials</div>
   <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Wallet">Wallet</div>
-  <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Transactions"><a href="https://ropsten.etherscan.io/address/0x8aa395Ab97837576aF9cd6946C79024ef1acfdbE" target="_blank" rel="noreferrer" title="Transactions">Transactions</a></div>
+  <div class="px-3 py-2 text-white cursor-pointer hover:text-[#1de1fd]" title="Transactions">Transactions</div>
 </div>
 
         <li
